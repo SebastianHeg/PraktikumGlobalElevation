@@ -1,0 +1,30 @@
+\hypertarget{classElevationData2D_1_1ReadFile}{}\section{Elevation\+Data2D\+:\+:Read\+File Class Reference}
+\label{classElevationData2D_1_1ReadFile}\index{Elevation\+Data2\+D\+::\+Read\+File@{Elevation\+Data2\+D\+::\+Read\+File}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classElevationData2D_1_1ReadFile_a48f8771b1f5d46693205c604fc33d84f}{get\+Data}} (\mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options}{Options}} \&opt)
+\item 
+\mbox{\Hypertarget{classElevationData2D_1_1ReadFile_ac8836783bd763cc6c0711761cfb80ae4}\label{classElevationData2D_1_1ReadFile_ac8836783bd763cc6c0711761cfb80ae4}} 
+char $\ast$$\ast$ {\bfseries get\+Metadata} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElevationData2D_1_1ReadFile_a48f8771b1f5d46693205c604fc33d84f}\label{classElevationData2D_1_1ReadFile_a48f8771b1f5d46693205c604fc33d84f}} 
+\index{Elevation\+Data2\+D\+::\+Read\+File@{Elevation\+Data2\+D\+::\+Read\+File}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Elevation\+Data2\+D\+::\+Read\+File@{Elevation\+Data2\+D\+::\+Read\+File}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily void Elevation\+Data2\+D\+::\+Read\+File\+::get\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options}{Options}} \&}]{opt }\end{DoxyParamCaption})}
+
+reads a tiff file and writes it to an array. With a longitude less than 50 and greater than -\/51 all values are copied into the array. For all other images, a linear interpolation over the neighboring pixels is performed and the mean value is formed. This is stored twice in the array. offset\+Buffer index des Bildes in file\+Names-\/Array 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Read\+File.\+hpp\item 
+Read\+File.\+cpp\end{DoxyCompactItemize}

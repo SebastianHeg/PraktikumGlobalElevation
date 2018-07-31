@@ -1,0 +1,52 @@
+\hypertarget{structElevationData2D_1_1ReadFile_1_1Options}{}\section{Elevation\+Data2D\+:\+:Read\+File\+:\+:Options Struct Reference}
+\label{structElevationData2D_1_1ReadFile_1_1Options}\index{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a087190b9826cb5f51a8058037a4df5fa}\label{structElevationData2D_1_1ReadFile_1_1Options_a087190b9826cb5f51a8058037a4df5fa}} 
+String \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a087190b9826cb5f51a8058037a4df5fa}{path}}
+\begin{DoxyCompactList}\small\item\em the path of saved data with file name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a86d0a0d5b7077f14c355a890785c61b8}\label{structElevationData2D_1_1ReadFile_1_1Options_a86d0a0d5b7077f14c355a890785c61b8}} 
+float $\ast$ \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a86d0a0d5b7077f14c355a890785c61b8}{raster\+Data}}
+\begin{DoxyCompactList}\small\item\em array with read elevation data \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a43a20cc28c6d9e708b2fbfcbb269d7ff}{number\+Of\+Elements}}
+\item 
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a1f6dafab6c8711a78158a7727f05a79b}\label{structElevationData2D_1_1ReadFile_1_1Options_a1f6dafab6c8711a78158a7727f05a79b}} 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a1f6dafab6c8711a78158a7727f05a79b}{offset\+X\+Top\+Corner}}
+\begin{DoxyCompactList}\small\item\em most left pixel which must be read first in this file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a303441c192b00be0a49a3d83d6c09200}{offset\+Y\+Top\+Corner}}
+\item 
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_ab26c64d16fb851be32a9125a411f26e8}\label{structElevationData2D_1_1ReadFile_1_1Options_ab26c64d16fb851be32a9125a411f26e8}} 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_ab26c64d16fb851be32a9125a411f26e8}{img\+SizeX}}
+\begin{DoxyCompactList}\small\item\em width of data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_af5b78d2e15389a9dce0ab574e48e25bf}\label{structElevationData2D_1_1ReadFile_1_1Options_af5b78d2e15389a9dce0ab574e48e25bf}} 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_af5b78d2e15389a9dce0ab574e48e25bf}{img\+SizeY}}
+\begin{DoxyCompactList}\small\item\em height of data \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structElevationData2D_1_1ReadFile_1_1Options_a492ba62bf5f3194ae388aedb2c0c7e6b}{lat}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a492ba62bf5f3194ae388aedb2c0c7e6b}\label{structElevationData2D_1_1ReadFile_1_1Options_a492ba62bf5f3194ae388aedb2c0c7e6b}} 
+\index{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}!lat@{lat}}
+\index{lat@{lat}!Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}}
+\subsubsection{\texorpdfstring{lat}{lat}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Read\+File\+::\+Options\+::lat}
+
+down rounded latitude of pixel which is read. Serves to check is interpolation neccessary \mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a43a20cc28c6d9e708b2fbfcbb269d7ff}\label{structElevationData2D_1_1ReadFile_1_1Options_a43a20cc28c6d9e708b2fbfcbb269d7ff}} 
+\index{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}!number\+Of\+Elements@{number\+Of\+Elements}}
+\index{number\+Of\+Elements@{number\+Of\+Elements}!Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}}
+\subsubsection{\texorpdfstring{number\+Of\+Elements}{numberOfElements}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Read\+File\+::\+Options\+::number\+Of\+Elements}
+
+the number of previous read elements, serves to control to fill raster\+Data with pointer arithmetic \mbox{\Hypertarget{structElevationData2D_1_1ReadFile_1_1Options_a303441c192b00be0a49a3d83d6c09200}\label{structElevationData2D_1_1ReadFile_1_1Options_a303441c192b00be0a49a3d83d6c09200}} 
+\index{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}!offset\+Y\+Top\+Corner@{offset\+Y\+Top\+Corner}}
+\index{offset\+Y\+Top\+Corner@{offset\+Y\+Top\+Corner}!Elevation\+Data2\+D\+::\+Read\+File\+::\+Options@{Elevation\+Data2\+D\+::\+Read\+File\+::\+Options}}
+\subsubsection{\texorpdfstring{offset\+Y\+Top\+Corner}{offsetYTopCorner}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Read\+File\+::\+Options\+::offset\+Y\+Top\+Corner}
+
+most upper pixel which must be read first in this file if both offset\+X\+Top\+Corner and offset\+Y\+Top\+Corner are equal to 0, the picture will be read from the beginning 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Read\+File.\+hpp\end{DoxyCompactItemize}

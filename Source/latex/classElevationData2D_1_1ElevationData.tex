@@ -1,0 +1,87 @@
+\hypertarget{classElevationData2D_1_1ElevationData}{}\section{Elevation\+Data2D\+:\+:Elevation\+Data Class Reference}
+\label{classElevationData2D_1_1ElevationData}\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElevationData2D_1_1ElevationData_ab6c477c8515de15f43e844c701c88f5b}{Elevation\+Data}} (const String \&path, const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&c1, const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&c2)
+\item 
+\mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a13b21b02c851a0521ba2591609158964}\label{classElevationData2D_1_1ElevationData_a13b21b02c851a0521ba2591609158964}} 
+{\bfseries Elevation\+Data} (const \mbox{\hyperlink{classElevationData2D_1_1ElevationData}{Elevation\+Data}} \&e\+Data)=delete
+\item 
+Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ \mbox{\hyperlink{classElevationData2D_1_1ElevationData_af0514b1f341d0284e05547e3dd19b644}{grid\+Vector}} () const
+\item 
+int \mbox{\hyperlink{classElevationData2D_1_1ElevationData_a058ce71c9949c9bb0ce9a933a60dcc4d}{sizeX}} () const
+\item 
+int \mbox{\hyperlink{classElevationData2D_1_1ElevationData_af99f1d5cdcf994d9f8f3cc725f9393c2}{sizeY}} () const
+\item 
+int \mbox{\hyperlink{classElevationData2D_1_1ElevationData_a171ff10d701d61b375a8d9a4e49d696e}{sizeX}} (const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&coord) const
+\item 
+int \mbox{\hyperlink{classElevationData2D_1_1ElevationData_a075227f3e6d08be154fe45f7900a3f76}{sizeY}} (const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&coord) const
+\item 
+Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ \mbox{\hyperlink{classElevationData2D_1_1ElevationData_ae4dfbc8a44b10da71d2d2c44072ced64}{first\+Left\+Column}} () const
+\item 
+Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ \mbox{\hyperlink{classElevationData2D_1_1ElevationData_a055c65b9f64c58e4fd37e48c36c69f6c}{first\+Up\+Row}} () const
+\item 
+\mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a0a150c24ae9f155260cc1d89be4ab8db}\label{classElevationData2D_1_1ElevationData_a0a150c24ae9f155260cc1d89be4ab8db}} 
+float \mbox{\hyperlink{classElevationData2D_1_1ElevationData_a0a150c24ae9f155260cc1d89be4ab8db}{operator()}} (int i, int j) const
+\begin{DoxyCompactList}\small\item\em return (i,j) value of data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElevationData2D_1_1ElevationData_ab6c477c8515de15f43e844c701c88f5b}\label{classElevationData2D_1_1ElevationData_ab6c477c8515de15f43e844c701c88f5b}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!Elevation\+Data@{Elevation\+Data}}
+\index{Elevation\+Data@{Elevation\+Data}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{Elevation\+Data()}{ElevationData()}}
+{\footnotesize\ttfamily Elevation\+Data2\+D\+::\+Elevation\+Data\+::\+Elevation\+Data (\begin{DoxyParamCaption}\item[{const String \&}]{path,  }\item[{const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&}]{c1,  }\item[{const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&}]{c2 }\end{DoxyParamCaption})}
+
+creates \mbox{\hyperlink{classElevationData2D_1_1ElevationData}{Elevation\+Data}} instance with upper-\/left corner c1 and down-\/right corner c2. creates and fills the array with all elevation data 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElevationData2D_1_1ElevationData_ae4dfbc8a44b10da71d2d2c44072ced64}\label{classElevationData2D_1_1ElevationData_ae4dfbc8a44b10da71d2d2c44072ced64}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!first\+Left\+Column@{first\+Left\+Column}}
+\index{first\+Left\+Column@{first\+Left\+Column}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{first\+Left\+Column()}{firstLeftColumn()}}
+{\footnotesize\ttfamily Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ Elevation\+Data2\+D\+::\+Elevation\+Data\+::first\+Left\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the vector of points from Vector\+Grid, that have the same latitude as c1 \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a055c65b9f64c58e4fd37e48c36c69f6c}\label{classElevationData2D_1_1ElevationData_a055c65b9f64c58e4fd37e48c36c69f6c}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!first\+Up\+Row@{first\+Up\+Row}}
+\index{first\+Up\+Row@{first\+Up\+Row}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{first\+Up\+Row()}{firstUpRow()}}
+{\footnotesize\ttfamily Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ Elevation\+Data2\+D\+::\+Elevation\+Data\+::first\+Up\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the vector of points from Vector\+Grid, that have the same longitude as c1 \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_af0514b1f341d0284e05547e3dd19b644}\label{classElevationData2D_1_1ElevationData_af0514b1f341d0284e05547e3dd19b644}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!grid\+Vector@{grid\+Vector}}
+\index{grid\+Vector@{grid\+Vector}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{grid\+Vector()}{gridVector()}}
+{\footnotesize\ttfamily Vector$<$ \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} $>$ Elevation\+Data2\+D\+::\+Elevation\+Data\+::grid\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the vectors with coordinates which are the intersection points of grid axes and intersection points of selected area\textquotesingle{}s edges with grid axes apart the points on the right edge \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a058ce71c9949c9bb0ce9a933a60dcc4d}\label{classElevationData2D_1_1ElevationData_a058ce71c9949c9bb0ce9a933a60dcc4d}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!sizeX@{sizeX}}
+\index{sizeX@{sizeX}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{size\+X()}{sizeX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Elevation\+Data\+::sizeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the number of Pixels in x axes direction or the width of the data \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a171ff10d701d61b375a8d9a4e49d696e}\label{classElevationData2D_1_1ElevationData_a171ff10d701d61b375a8d9a4e49d696e}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!sizeX@{sizeX}}
+\index{sizeX@{sizeX}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{size\+X()}{sizeX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Elevation\+Data\+::sizeX (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&}]{coord }\end{DoxyParamCaption}) const}
+
+returns the witdth of data, which is built with coord and next grid\+Vector points on the right side and down \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_af99f1d5cdcf994d9f8f3cc725f9393c2}\label{classElevationData2D_1_1ElevationData_af99f1d5cdcf994d9f8f3cc725f9393c2}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!sizeY@{sizeY}}
+\index{sizeY@{sizeY}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{size\+Y()}{sizeY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Elevation\+Data\+::sizeY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the number of Pixels in y axes direction or the height of the data \mbox{\Hypertarget{classElevationData2D_1_1ElevationData_a075227f3e6d08be154fe45f7900a3f76}\label{classElevationData2D_1_1ElevationData_a075227f3e6d08be154fe45f7900a3f76}} 
+\index{Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}!sizeY@{sizeY}}
+\index{sizeY@{sizeY}!Elevation\+Data2\+D\+::\+Elevation\+Data@{Elevation\+Data2\+D\+::\+Elevation\+Data}}
+\subsubsection{\texorpdfstring{size\+Y()}{sizeY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Elevation\+Data2\+D\+::\+Elevation\+Data\+::sizeY (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classElevationData2D_1_1Coordinate}{Coordinate}} \&}]{coord }\end{DoxyParamCaption}) const}
+
+returns the height of data, which is built with coord and next grid\+Vector points on the right side and down 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Elevation\+Data.\+hpp\item 
+Elevation\+Data.\+cpp\end{DoxyCompactItemize}
