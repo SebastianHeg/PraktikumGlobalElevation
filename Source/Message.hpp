@@ -17,9 +17,9 @@ public:
 
 public:
 	Message& operator << (signed int value);
-	Message& operator << (unsigned int value);
+	Message& operator << (uint value);
 	Message& operator << (signed long value);
-	Message& operator << (unsigned long value);
+	Message& operator << (ulong value);
 	Message& operator << (float value);
 	Message& operator << (double value);
 	Message& operator << (const char* value);

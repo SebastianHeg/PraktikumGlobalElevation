@@ -11,8 +11,8 @@ int main(int argc, char* argv[])
 	/// and Altstadt
 	String path = "";
 	ElevationData2D::Coordinate c1(49.43,8.66),c2(49.40,8.73);   
-	ElevationData2D::ElevationData eData("/home/tatev/praktikum/GlobalElevation/Include/Resources/Test/", c1, c2);
-	std::cout<<eData(98,111)<<std::endl;
+	ElevationData2D::ElevationData eData("path/", c1, c2);
+	std::cout << eData(10, 20) << std::endl;
 
 	std::string filename="output.xlsx";
 	writeFile(eData,filename);

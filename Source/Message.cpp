@@ -31,7 +31,7 @@ Message& Message::operator<<(signed int value)
 	return *this;
 }
 
-Message& Message::operator<<(unsigned int value)
+Message& Message::operator<<(uint value)
 {
 	stream->os << value << " ";
 	return *this;
@@ -43,7 +43,7 @@ Message& Message::operator<<(signed long value)
 	return *this;
 }
 
-Message& Message::operator<<(unsigned long value)
+Message& Message::operator<<(ulong value)
 {
 	stream->os << value << " ";
 	return *this;

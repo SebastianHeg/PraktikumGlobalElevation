@@ -68,7 +68,7 @@ void ReadFile::linearInterpolation(GDALRasterBand* band, Options& opt)
 			nextValue = buffer[i + 1];
 		}
 
-		opt.rasterData[opt.numberOfElements + i] = averageValue;
+		opt.rasterData[opt.numberOfElements + i] = buffer[i];
 		opt.rasterData[opt.numberOfElements + i + 1] = averageValue;
 		i += 2;
 	}

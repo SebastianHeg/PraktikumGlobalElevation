@@ -15,6 +15,5 @@
 
 #include "Logger.hpp"
 #include "Message.hpp"
-//#include "functions.hpp"
 
 #endif
