@@ -18,7 +18,7 @@ public:
 	struct Options
 	{
 		String path;			///< the path of saved data with file name
-		float* rasterData;		///< array with read elevation data
+		int* rasterData;		///< array with read elevation data
 		int numberOfElements;   ///< the number of previous read elements, serves to
 								///< control to fill rasterData with pointer arithmetic
 		int offsetXTopCorner;   ///< most left pixel which must be read first in this file

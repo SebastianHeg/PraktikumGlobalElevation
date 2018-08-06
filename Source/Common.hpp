@@ -15,8 +15,6 @@ template <class First, class Second> using Pair = std::pair<First, Second>;
 #define IMAGE_SIZE_G 3600
 #define IMAGE_SIZE_S 1800
 
-#define PATH "..\\..\\Include\\Resources\\Test\\";
-
 //#define WINDOWS defined _WIN32 || defined WIN32 || defined _WIN64 || defined WIN64
 //#define LINUX defined unix || defined __unix || defined __unix__ || defined __linux__
 //#define MACOS defined __APPLE__ || defined __MACH__

@@ -14,7 +14,7 @@ namespace ElevationData2D {
 		for (uint i = 0; i < files.size(); ++i)
 			fileNames.push_back(files[i]);
 
-		rasterData = new float[rasterDataSize()];
+		rasterData = new int[rasterDataSize()];
 		createElevationArray(path);
 	}
 
@@ -73,6 +73,7 @@ namespace ElevationData2D {
 
 					opt.lat = std::floor(grid[i * col_size + j].getLat());
 					readFile.getData(opt);
+
 					opt.numberOfElements += opt.imgSizeX;
 				}
 			}
@@ -109,6 +110,8 @@ namespace ElevationData2D {
 				opt.numberOfElements += opt.imgSizeX;
 			}
 		}
+
+		wholeSizeX = sizeX();
 	}
 
 	Vector<Coordinate> ElevationData::gridVector() const
@@ -126,8 +129,7 @@ namespace ElevationData2D {
 
 		if (c1.getLat() - float(start_lat) < epsilon)
 			start_lat = std::floor(c1.getLat()) - 1;
-		//wird erste Zeile der Koordinate in vector eingefügt
-		//wenn c2 keine Grenze ist
+
 		for (int i = start_lon; i < size_lon; ++i)
 			v.push_back(Coordinate(c1.getLat(), float(i + 1)));
 
@@ -157,11 +159,6 @@ namespace ElevationData2D {
 		std::cin >> RESOURCEPATH;
 		return RESOURCEPATH;
 	}
-
-	/*float ElevationData::getElevationPoint(const int row, const int col) const
-	{
-		return rasterData[row * numOfPixels + col];
-	}*/
 
 	Pair<int, int> ElevationData::getLatLon(const String& name) const
 	{
@@ -264,10 +261,9 @@ namespace ElevationData2D {
 		return row;
 	}
 
-	float ElevationData::operator()(int i, int j) const
+	int ElevationData::operator()(int i, int j) const
 	{
-		//return *(rasterData+i*sizeX()+j);
-		return rasterData[(i-1)*sizeX() + j];
+		return rasterData[j * wholeSizeX + i];
 	}
 
 }

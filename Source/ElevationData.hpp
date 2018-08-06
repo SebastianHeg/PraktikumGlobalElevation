@@ -54,16 +54,17 @@ public:
 	Vector<Coordinate> firstUpRow() const;
 
 	/// return (i,j) value of data
-	float operator()(int i, int j) const;
+	int operator()(int i, int j) const;
 
 private:
 	Coordinate c1;   ///< upper-left corner of selected area
 	Coordinate c2;   ///< down-right corner of selected aea
 
-	float* rasterData;  ///< elevation data with upper-left corner c1 and down-right corner c2
+	int* rasterData;  ///< elevation data with upper-left corner c1 and down-right corner c2
 
 	Vector<String> fileNames;  ///< includes all file names that have a pixels from data
 	int numOfPixels;
+	int wholeSizeX;
 
 private:
 	/// releases the allocated memory on heap

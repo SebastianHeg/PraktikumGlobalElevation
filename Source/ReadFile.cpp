@@ -36,27 +36,26 @@ void ReadFile::getData(Options& opt)
 	{
 		band->RasterIO(GF_Read, opt.offsetXTopCorner, opt.offsetYTopCorner, 
 				opt.imgSizeX, opt.imgSizeY, opt.rasterData + opt.numberOfElements,
-				opt.imgSizeX, opt.imgSizeY, GDT_Float32, 0, 0);	
+				opt.imgSizeX, opt.imgSizeY, GDT_CInt16, 0, 0);	
 	} else
 	{
 		linearInterpolation(band, opt);
 	}
-/// offsetBuffer index des Bildes in fileNames-Array
 
 	GDALClose(dataset);
 }
 
 void ReadFile::linearInterpolation(GDALRasterBand* band, Options& opt)
 {
-	float* buffer = new float(IMAGE_SIZE_G * IMAGE_SIZE_S + 1);
+	int* buffer = new int(opt.imgSizeX * opt.imgSizeY + 1);
 	band->RasterIO(GF_Read, opt.offsetXTopCorner, opt.offsetYTopCorner,
 				   opt.imgSizeX, opt.imgSizeY,
 				   buffer,
-				   opt.imgSizeX, opt.imgSizeY, GDT_Float32,
+				   opt.imgSizeX, opt.imgSizeY, GDT_CInt16,
 				   0, 0);
 
 	uint i = 0;
-	while(i < (IMAGE_SIZE_G * IMAGE_SIZE_S + 1))
+	while(i < (opt.imgSizeX * opt.imgSizeY + 1))
 	{
 		float averageValue;
 		if(buffer[i] == NULL && nextValue != 0.0f)
@@ -80,6 +79,5 @@ char** ReadFile::getMetadata()
 {
 	return dataset->GetMetadata();
 }
-
 
 } // namespace ElevationData2D
